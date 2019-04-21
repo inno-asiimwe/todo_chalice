@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::215214523578:role/mytodo-dev",
+      "role_name": "mytodo-dev"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-2:215214523578:function:mytodo-dev"
+    },
+    {
+      "name": "jwt_auth",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-2:215214523578:function:mytodo-dev-jwt_auth"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "2jepu165uk",
+      "rest_api_url": "https://2jepu165uk.execute-api.us-east-2.amazonaws.com/api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

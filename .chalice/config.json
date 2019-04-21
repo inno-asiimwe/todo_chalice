@@ -1,9 +1,13 @@
 {
-  "version": "2.0",
-  "app_name": "mytodo",
-  "stages": {
-    "dev": {
-      "api_gateway_stage": "api"
+  "version":"2.0",
+  "app_name":"mytodo",
+  "stages":{
+    "dev":{
+      "api_gateway_stage":"api",
+      "environment_variables":{
+        "APP_TABLE_NAME":"todo-app-d603bc35-b3ce-4333-8043-8a9e2b0dfa0c",
+        "USERS_TABLE_NAME":"users-app-19520b0c-e70b-4496-9bb4-6c0c22dd5326"
+      }
     }
   }
 }
